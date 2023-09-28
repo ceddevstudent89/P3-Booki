@@ -118,6 +118,103 @@ nav ul li:hover a {
   color: var(--main-color);
 }
 
+/* section button Rechercher */
+.search-container {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.search-container span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f3f3f3;
+  width: 50px;
+  height: 50px;
+  background-color: #f3f3f3;
+  border-radius: 15px 0 0 15px;
+}
+
+.search-container form input[type="search"] {
+  border: none;
+  border: 1px solid #f3f3f3;
+  height: 50px;
+  width: 200px;
+  font-size: 1.2em;
+  font-weight: 700;
+  padding-left: 20px;
+}
+
+.search-container button[type="submit"] {
+  height: 50px;
+  width: 140px;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 0 15px 15px 0;
+  font-size: 1.1em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 300ms ease-out;
+}
+
+.search-container button[type="submit"]:hover {
+  background-color: rgba(0, 101, 252, 0.9);
+}
+
+/* FILTER */
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.filter-container h2 {
+  margin-right: 60px;
+}
+
+.filter-container-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.filter-btn {
+  width: 100%;
+  text-wrap: nowrap;
+  padding: 10px 20px;
+  border: 2px solid var(--main-bg-color);
+  border-radius: 999px;
+  transition: 300ms ease-out;
+}
+
+.filter-btn:hover {
+  background-color: var(--filter-bg-color);
+}
+
+.filter-btn i {
+  color: var(--main-color);
+  margin-right: 10px;
+}
+
+/* Section Info */
+
+.info {
+  margin: 20px 0;
+}
+
+.info p span {
+  color: var(--main-color);
+  font-family: serif;
+  font-weight: 900;
+  border: 1px solid var(--main-bg-color);
+  padding: 3px 9px;
+  border-radius: 50%;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
   display: flex;
