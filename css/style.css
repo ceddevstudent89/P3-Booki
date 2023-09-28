@@ -16,6 +16,8 @@
 body {
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .main-container {
@@ -67,24 +69,48 @@ li {
   color: var(--main-bg-color);
 }
 
+#logo {
+  padding: 20px 0;
+  width: 61.09px;
+  height: 19px;
+  margin: 20px 0 0 0;
+}
+
+h1 {
+  margin: 0;
+}
+
 /***************** HEADER **********************/
 
 header {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
 }
+
 /* NAVBAR */
 nav ul {
   display: flex;
-  justify-content: flex-end;
-  width: 328.601px;
-  padding: 0px 25px;
-  gap: 68px;
-  margin: 0;
+  align-items: flex-end;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+nav ul li {
+  margin-left: 63px;
+  width: fit-content;
+  text-align: end;
+  padding-top: 20px;
+  /* évite le bug+ */
+  border-top: 2px solid transparent;
+  cursor: pointer;
+}
+
+nav ul li a {
+  color: #242424;
 }
 
 nav ul li:hover {
+  color: var(--main-color);
   border-top: 2px solid var(--main-color);
 }
 
