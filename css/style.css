@@ -377,9 +377,10 @@ nav ul li:hover a {
 
 .activites-cards {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: center;
+  /* flex-wrap: wrap; */
 }
 
 .activites-cards .card {
@@ -398,13 +399,13 @@ nav ul li:hover a {
 
 .activites-cards img {
   width: 100%;
-  height: 400px;
+  height: 439px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
 .activites-cards .card-content {
-  width: 80%;
+  width: 100%;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -477,6 +478,25 @@ nav ul li:hover a {
 
   .populaires-cards .card-subtitle {
     font-size: 13px;
+  }
+
+  .activites-cards .card {
+    width: 193.5px;
+  }
+
+  .activites-cards img {
+    height: 200px;
+  }
+
+  .activites-cards .card-content {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+  }
+
+  .activites-cards .card-title {
+    font-size: 14px;
+    margin: 0;
   }
 }
 
