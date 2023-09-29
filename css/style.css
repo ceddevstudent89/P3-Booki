@@ -139,8 +139,8 @@ nav ul li:hover a {
   justify-content: center;
   align-items: center;
   border: 1px solid #f3f3f3;
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   background-color: #f3f3f3;
   border-radius: 15px 0 0 15px;
 }
@@ -153,10 +153,10 @@ nav ul li:hover a {
   border: none;
   border: 1px solid #f3f3f3;
   height: 50px;
-  width: 200px;
+  width: 220px;
   font-size: 1.2em;
   font-weight: 700;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .search-container button[type="submit"] {
@@ -187,6 +187,7 @@ nav ul li:hover a {
   display: flex;
   align-items: center;
   justify-content: start;
+  flex-wrap: wrap;
 }
 
 .filter-container h2 {
@@ -196,19 +197,27 @@ nav ul li:hover a {
 
 .filter-container-btns {
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .filter-btn {
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 50%; */
   font-weight: 700;
   text-wrap: nowrap;
   padding: 15px 20px;
   border: 2px solid var(--main-bg-color);
   border-radius: 999px;
   transition: 300ms ease-out;
+}
+
+/* correction bug sur firefox */
+.filter-text {
+  width: 90px;
 }
 
 .filter-btn:hover {
@@ -305,7 +314,7 @@ nav ul li:hover a {
 }
 
 .hebergements h2 {
-  margin: 0;
+  margin-bottom: 30px;
 }
 
 .hebergements-cards {
@@ -319,7 +328,6 @@ nav ul li:hover a {
 .hebergements-cards .card {
   display: flex;
   flex-direction: column;
-  margin-top: 33px;
   width: 240px;
   transition: transform 0.3s ease-out;
 }
