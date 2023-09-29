@@ -206,18 +206,13 @@ nav ul li:hover a {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* width: 50%; */
+  /* width: 120px; */
   font-weight: 700;
   text-wrap: nowrap;
   padding: 15px 20px;
   border: 2px solid var(--main-bg-color);
   border-radius: 999px;
   transition: 300ms ease-out;
-}
-
-/* correction bug sur firefox */
-.filter-text {
-  width: 90px;
 }
 
 .filter-btn:hover {
