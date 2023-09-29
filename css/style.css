@@ -262,6 +262,11 @@ nav ul li:hover a {
 .populaires-cards .card {
   display: flex;
   margin-top: 33px;
+  transition: transform 0.3s ease-out;
+}
+
+.populaires-cards .card:hover {
+  transform: scale(1.05);
 }
 
 .populaires-cards img {
@@ -316,6 +321,11 @@ nav ul li:hover a {
   flex-direction: column;
   margin-top: 33px;
   width: 240px;
+  transition: transform 0.3s ease-out;
+}
+
+.hebergements-cards .card:hover {
+  transform: scale(1.05);
 }
 
 .hebergements-cards img {
@@ -336,7 +346,7 @@ nav ul li:hover a {
 
 .hebergements-cards .card-title {
   margin-top: 10px;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
 }
 
 .hebergements-cards .card-subtitle {
@@ -345,6 +355,13 @@ nav ul li:hover a {
 
 .hebergements-cards .card-rating {
   margin-bottom: 5px;
+}
+
+#show-more {
+  display: block;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding-top: 40px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
