@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booki</title>
+    <link rel="shortcut icon" href="images/logo/Booki.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,6 +24,7 @@
   <body>
     <div class="main-container">
       <!-- ********************HEADER********************************* -->
+      <div class="info-group"></div>
       <header>
         <h1>
           <img src="images/logo/Booki@3x.png" alt="logo Booki" id="logo" />
@@ -38,12 +40,10 @@
       <!-- *************************MAIN****************************** -->
       <main>
         <!-- ************************************************************ -->
-        <section class="text-intro">
+        <section class="info-group">
           <h2>Trouvez votre Hébergements pour des vacances de rêve</h2>
           <p>En plein centre-ville ou en pleine nature</p>
-        </section>
 
-        <section>
           <div class="search-container">
             <span><i class="fa-solid fa-location-dot fa-lg"></i></span>
             <form action="#" method="get">
@@ -59,41 +59,40 @@
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </div>
-        </section>
 
-        <section class="filter-container">
-          <h2>Filtres</h2>
-          <div class="filter-container-btns">
-            <div class="filter-btn">
-              <i class="fa-solid fa-money-bill-wave fa-lg"></i>
-              <span>Économique</span>
-            </div>
-            <div class="filter-btn">
-              <i class="fa-solid fa-person fa-lg"></i>
-              <span>Familial</span>
-            </div>
-            <div class="filter-btn">
-              <i class="fa-solid fa-heart fa-lg"></i>
-              <span>Romantique</span>
-            </div>
-            <div class="filter-btn">
-              <i class="fa-solid fa-fire fa-lg"></i>
-              <span class="filter-text">Nos pépites</span>
+          <div class="filter-container">
+            <h2>Filtres</h2>
+            <div class="filter-container-btns">
+              <div class="filter-btn">
+                <i class="fa-solid fa-money-bill-wave fa-lg"></i>
+                <span>Économique</span>
+              </div>
+              <div class="filter-btn">
+                <i class="fa-solid fa-person fa-lg"></i>
+                <span>Familial</span>
+              </div>
+              <div class="filter-btn">
+                <i class="fa-solid fa-heart fa-lg"></i>
+                <span>Romantique</span>
+              </div>
+              <div class="filter-btn">
+                <i class="fa-solid fa-fire fa-lg"></i>
+                <span class="filter-text">Nos pépites</span>
+              </div>
             </div>
           </div>
-        </section>
 
-        <section class="info">
-          <p>
-            <span><i class="fa-solid fa-info fa-2xs"></i></span> Plus de 500
-            logements sont disponibles dans cette ville
-          </p>
+          <div class="info">
+            <span><i class="fa-solid fa-info fa-2xs"></i></span>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+          </div>
         </section>
-        <!-- ************************************************************ -->
         <div class="hebergements-and-populaires">
-          <!-- section hébergements -->
           <section class="hebergements">
-            <h2 class="section-title">Hébergements à Marseille</h2>
+            <div class="hebergements-title">
+              <h2 class="section-title">Hébergements à Marseille</h2>
+              <i class="fa-solid fa-hotel" aria-hidden="true"></i>
+            </div>
             <div class="hebergements-cards">
               <a href="#">
                 <article class="card">
@@ -211,7 +210,7 @@
                   />
                   <div class="card-content">
                     <div class="card-txt">
-                      <h3 class="card-title">Auberge La Canebière</h3>
+                      <h3 class="card-title">Auberge La Cannebière</h3>
                       <p class="card-subtitle">
                         Nuit à partir de 25<span class="euro">€</span>
                       </p>
@@ -258,9 +257,8 @@
                 </article>
               </a>
             </div>
-            <a href="#" id="show-more">Afficher plus</a>
+            <a class="show-more">Afficher plus</a>
           </section>
-          <!-- Section populaires -->
           <section class="populaires">
             <div class="populaires-title">
               <h2 class="section-title">Les plus populaires</h2>
@@ -353,10 +351,11 @@
             </div>
           </section>
         </div>
-        <!-- --------------------Section Activites----------------- -->
+        <!-- ------------------Section activites------------------- -->
         <section class="activites">
           <div class="activites-title">
             <h2 class="section-title">Activités à Marseille</h2>
+            <i class="fa-solid fa-person-biking" aria-hidden="true"></i>
           </div>
           <div class="activites-cards">
             <a href="#">
@@ -372,7 +371,6 @@
                 </div>
               </article>
             </a>
-
             <a href="#">
               <article class="card">
                 <img
@@ -386,7 +384,6 @@
                 </div>
               </article>
             </a>
-
             <a href="#">
               <article class="card">
                 <img
@@ -400,7 +397,6 @@
                 </div>
               </article>
             </a>
-
             <a href="#">
               <article class="card">
                 <img
