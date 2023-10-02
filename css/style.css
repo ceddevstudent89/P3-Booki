@@ -10,6 +10,10 @@
   --filter-border-color: #d9d9d9;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .fa-solid {
   color: var(--main-color);
 }
@@ -147,6 +151,10 @@ nav ul li:hover a {
   padding-left: 30px;
 }
 
+.search-container input[type="search"]::placeholder {
+  color: black;
+}
+
 .search-container button[type="submit"] {
   height: 50px;
   width: 140px;
@@ -158,10 +166,6 @@ nav ul li:hover a {
   font-weight: 700;
   cursor: pointer;
   transition: 300ms ease-out;
-}
-
-.search-container button[type="submit"]:hover {
-  background-color: rgba(0, 101, 252, 0.9);
 }
 
 .search-icon {
@@ -195,7 +199,7 @@ nav ul li:hover a {
   flex-wrap: wrap;
 }
 
-.filter-container h2 {
+.filter-container h3 {
   margin-right: 20px;
   font-size: 1em;
 }
@@ -410,7 +414,7 @@ nav ul li:hover a {
 }
 
 /* ************************Footer********************************** */
-.footer {
+footer {
   margin-top: 35px;
   padding: 20px;
   background-color: var(--main-bg-color);
@@ -419,20 +423,20 @@ nav ul li:hover a {
   justify-content: space-between;
 }
 
-.footer article {
+footer article {
   width: 33%;
 }
 
-.footer h3 {
+footer h3 {
   margin: 0;
 }
 
-.footer ul li {
+footer ul li {
   line-height: 2;
   list-style: none;
 }
 
-.footer ul {
+footer ul {
   padding-left: 0;
   margin-top: 10px;
 }
@@ -641,10 +645,10 @@ nav ul li:hover a {
 
   /* Footer */
 
-  .footer {
+  footer {
     flex-direction: column;
   }
-  .footer article {
+  footer article {
     width: 100%;
     margin-bottom: 30px;
   }

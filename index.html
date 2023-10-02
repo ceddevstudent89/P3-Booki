@@ -28,7 +28,6 @@
   <body>
     <div class="main-container">
       <!-- ********************HEADER********************************* -->
-      <div class="info-group"></div>
       <header>
         <h1>
           <img src="images/logo/Booki@3x.png" alt="logo Booki" id="logo" />
@@ -36,8 +35,8 @@
 
         <nav>
           <ul>
-            <li><a href="#">Hébergements</a></li>
-            <li><a href="#">Activités</a></li>
+            <li><a href="#hebergements">Hébergements</a></li>
+            <li><a href="#activites">Activités</a></li>
           </ul>
         </nav>
       </header>
@@ -55,7 +54,7 @@
                 type="search"
                 name="search"
                 id="search"
-                value="Marseille, France"
+                placeholder="Marseille, France"
               />
             </form>
             <button class="btn-search" type="submit">Rechercher</button>
@@ -65,7 +64,7 @@
           </div>
 
           <div class="filter-container">
-            <h2>Filtres</h2>
+            <h3>Filtres</h3>
             <div class="filter-container-btns">
               <div class="filter-btn">
                 <i class="fa-solid fa-money-bill-wave fa-lg"></i>
@@ -92,7 +91,7 @@
           </div>
         </section>
         <div class="hebergements-and-populaires">
-          <section class="hebergements">
+          <section class="hebergements" id="hebergements">
             <div class="hebergements-title">
               <h2 class="section-title">Hébergements à Marseille</h2>
               <i class="fa-solid fa-hotel" aria-hidden="true"></i>
@@ -356,7 +355,7 @@
           </section>
         </div>
         <!-- ------------------Section activites------------------- -->
-        <section class="activites">
+        <section class="activites" id="activites">
           <div class="activites-title">
             <h2 class="section-title">Activités à Marseille</h2>
             <i class="fa-solid fa-person-biking" aria-hidden="true"></i>
@@ -417,7 +416,7 @@
           </div>
         </section>
       </main>
-      <footer class="footer">
+      <footer>
         <article>
           <h3 class="">À propos</h3>
           <ul>
