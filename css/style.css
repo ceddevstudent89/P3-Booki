@@ -219,7 +219,8 @@ nav ul li:hover a {
   justify-content: center;
   /* width: 120px; */
   font-weight: 700;
-  text-wrap: nowrap;
+  /* Error: text-wrap: Property text-wrap doesn't exist. Validator W3C */
+  /* text-wrap: nowrap; */
   padding: 15px 20px;
   border: 2px solid var(--filter-border-color);
   border-radius: 999px;
