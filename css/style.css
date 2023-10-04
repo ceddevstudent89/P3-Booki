@@ -153,6 +153,8 @@ nav ul li:hover a {
 
 .search-container input[type="search"]::placeholder {
   color: black;
+  /* Opacity 1 pour le navigateur fivefox */
+  opacity: 1;
 }
 
 .search-container button[type="submit"] {
